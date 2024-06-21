@@ -8,7 +8,7 @@ WORKDIR /app
 COPY target/CRM-0.0.1-SNAPSHOT.jar /app/CRM-0.0.1-SNAPSHOT.jar
 
 # Make port 8080 available to the world outside this container (adjust as needed)
-EXPOSE 8086
+EXPOSE 8087
 
 # Command to run the application
 CMD ["java", "-jar", "CRM-0.0.1-SNAPSHOT.jar"]
