@@ -1,15 +1,14 @@
-# Use a base image with Java 8 already installed
-FROM amazoncorretto:8
+# Use an official OpenJDK runtime as a parent image
+FROM openjdk:8-jre-slim
 
-# Set the working directory inside the container
+# Set the working directory in the container
 WORKDIR /app
 
-# Copy the executable JAR file from your host into the container at /app
-COPY target/CRM-0.0.1-SNAPSHOT.jar .
+# Copy the JAR file into the container at /app
+COPY target/CRM-0.0.1-SNAPSHOT.jar /app/CRM-0.0.1-SNAPSHOT.jar
 
-# Expose the port that your application listens to
-EXPOSE 8081
+# Make port 8080 available to the world outside this container (adjust as needed)
+EXPOSE 8080
 
-# Command to run your application
+# Command to run the application
 CMD ["java", "-jar", "CRM-0.0.1-SNAPSHOT.jar"]
-
