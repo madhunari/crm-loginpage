@@ -9,7 +9,7 @@ Note: in this project a free bootstrap templete [Vali Admin](https://github.com/
 
 ## Main features:
 - User roles: employee, manager, owner and admin
-- Adding and editing users by admin
+- Adding and editing users by admin    
 - Adding and editing clients
 - Searching clients from employee city by employee
 - Searching all clients in database by manager
